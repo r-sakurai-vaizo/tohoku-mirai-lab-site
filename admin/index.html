@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRM | 東北大未来探求ラボ</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101412'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='34' fill='%23fffdf8' font-family='sans-serif'%3E%E5%95%8F%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="crm-body">
+    <div class="crm-app" data-crm-app>
+      <aside class="crm-sidebar" aria-label="CRMナビゲーション">
+        <a class="brand crm-brand" href="../index.html" aria-label="公開サイトへ">
+          <span class="brand-mark" aria-hidden="true">問</span>
+          <span>
+            <strong>東北大未来探求ラボ</strong>
+            <small>Rich CRM</small>
+          </span>
+        </a>
+        <nav class="crm-nav" aria-label="管理画面">
+          <button class="is-active" type="button" data-view="dashboard">ダッシュボード</button>
+          <button type="button" data-view="activities">活動</button>
+          <button type="button" data-view="records">記録</button>
+          <button type="button" data-view="media">素材</button>
+          <button type="button" data-view="reviews">レビュー</button>
+          <button type="button" data-view="publishing">公開管理</button>
+          <button type="button" data-view="users">ユーザー</button>
+          <button type="button" data-view="logs">監査ログ</button>
+        </nav>
+        <div class="crm-sidebar-foot">
+          <span>Role</span>
+          <strong data-current-role>Admin</strong>
+          <a href="../index.html">公開サイトへ戻る</a>
+        </div>
+      </aside>
+
+      <main class="crm-main">
+        <header class="crm-topbar">
+          <div>
+            <p class="eyebrow">Private workspace</p>
+            <h1 data-view-title>ダッシュボード</h1>
+          </div>
+          <div class="crm-topbar-actions">
+            <select data-role-switch aria-label="操作ロール">
+              <option>Admin</option>
+              <option>Reviewer</option>
+              <option>Editor</option>
+              <option>Contributor</option>
+              <option>Viewer</option>
+            </select>
+            <button type="button" data-export-all>全データを書き出す</button>
+            <button type="button" data-reset-demo>初期データに戻す</button>
+          </div>
+        </header>
+
+        <section class="crm-alert" data-crm-alert hidden></section>
+
+        <section class="crm-view is-active" data-panel="dashboard">
+          <div class="crm-metrics" data-dashboard-metrics></div>
+          <div class="crm-split">
+            <section class="crm-card">
+              <div class="crm-section-head">
+                <div>
+                  <p class="eyebrow">Review queue</p>
+                  <h2>公開前に止めるもの</h2>
+                </div>
+              </div>
+              <div data-review-queue></div>
+            </section>
+            <section class="crm-card">
+              <div class="crm-section-head">
+                <div>
+                  <p class="eyebrow">Recent logs</p>
+                  <h2>最近の操作</h2>
+                </div>
+              </div>
+              <div data-recent-logs></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="crm-view" data-panel="activities">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Activities</p>
+              <h2>活動を管理する</h2>
+            </div>
+            <button type="button" data-create="activity">活動を作成</button>
+          </div>
+          <div class="crm-toolbar">
+            <input data-search="activities" placeholder="活動を検索" />
+            <select data-status-filter="activities">
+              <option value="ALL">すべての状態</option>
+              <option value="DRAFT">下書き</option>
+              <option value="REVIEW_REQUESTED">レビュー中</option>
+              <option value="APPROVED">承認済み</option>
+              <option value="PUBLISHED">公開済み</option>
+            </select>
+          </div>
+          <div class="crm-table-wrap" data-table="activities"></div>
+        </section>
+
+        <section class="crm-view" data-panel="records">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Records</p>
+              <h2>記録を管理する</h2>
+            </div>
+            <button type="button" data-create="record">記録を作成</button>
+          </div>
+          <div class="crm-toolbar">
+            <input data-search="records" placeholder="記録を検索" />
+            <select data-status-filter="records">
+              <option value="ALL">すべての状態</option>
+              <option value="DRAFT">下書き</option>
+              <option value="REVIEW_REQUESTED">レビュー中</option>
+              <option value="APPROVED">承認済み</option>
+              <option value="PUBLISHED">公開済み</option>
+            </select>
+          </div>
+          <div class="crm-table-wrap" data-table="records"></div>
+        </section>
+
+        <section class="crm-view" data-panel="media">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Media</p>
+              <h2>素材を管理する</h2>
+            </div>
+            <button type="button" data-create="media">素材を登録</button>
+          </div>
+          <div class="crm-media-grid" data-media-grid></div>
+        </section>
+
+        <section class="crm-view" data-panel="reviews">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Reviews</p>
+              <h2>レビューと承認</h2>
+            </div>
+          </div>
+          <div class="crm-kanban" data-review-board></div>
+        </section>
+
+        <section class="crm-view" data-panel="publishing">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Publishing</p>
+              <h2>公開管理</h2>
+            </div>
+          </div>
+          <div class="crm-publish-grid" data-publish-grid></div>
+          <textarea class="admin-json" data-public-json rows="14" readonly aria-label="公開JSON"></textarea>
+        </section>
+
+        <section class="crm-view" data-panel="users">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Users</p>
+              <h2>権限とメンバー</h2>
+            </div>
+            <button type="button" data-create="user">ユーザーを招待</button>
+          </div>
+          <div class="crm-table-wrap" data-table="users"></div>
+        </section>
+
+        <section class="crm-view" data-panel="logs">
+          <div class="crm-section-head">
+            <div>
+              <p class="eyebrow">Audit logs</p>
+              <h2>監査ログ</h2>
+            </div>
+          </div>
+          <div class="crm-table-wrap" data-table="logs"></div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="crm-dialog" data-editor-dialog>
+      <form method="dialog" class="crm-editor" data-editor-form>
+        <div class="crm-section-head">
+          <div>
+            <p class="eyebrow" data-editor-kicker>Editor</p>
+            <h2 data-editor-title>作成</h2>
+          </div>
+          <button type="button" data-close-dialog aria-label="閉じる">×</button>
+        </div>
+        <div class="crm-form-grid" data-editor-fields></div>
+        <div class="crm-dialog-actions">
+          <button type="button" data-save-editor>保存</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="crm-dialog" data-export-dialog>
+      <form method="dialog" class="crm-editor">
+        <div class="crm-section-head">
+          <div>
+            <p class="eyebrow">Export</p>
+            <h2>書き出しデータ</h2>
+          </div>
+          <button type="button" data-close-export aria-label="閉じる">×</button>
+        </div>
+        <textarea class="admin-json" data-export-json rows="18" readonly></textarea>
+      </form>
+    </dialog>
+
+    <script src="./crm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "record-inquiry-001",
+    "date": "2026-07-01",
+    "dateLabel": "2026.07",
+    "type": "対話記録",
+    "title": "問いを立てる前に、聞き直す",
+    "summary": "対話の中で見つかった言葉を、急いで結論にせず、問いとして持ち帰るための記録を残します",
+    "status": "準備中",
+    "image": "./assets/future-lab/record-inquiry-sakura.png",
+    "imageAlt": "光の中に咲く桜"
+  },
+  {
+    "id": "record-activity-log-001",
+    "date": "2026-07-01",
+    "dateLabel": "2026.07",
+    "type": "活動記録",
+    "title": "出逢いのあとに、残しておくこと",
+    "summary": "活動の成果だけではなく、その場で交わされた言葉や迷いも、次に読み返せる形へ整えていきます",
+    "status": "進行中",
+    "image": "./assets/future-lab/record-activity-road.png",
+    "imageAlt": "桜の木へ続く道"
+  },
+  {
+    "id": "record-social-project-001",
+    "date": "2026-07-01",
+    "dateLabel": "2026.07",
+    "type": "編集ノート",
+    "title": "言葉を、次の人に渡せる場所へ",
+    "summary": "読み手が自分の問いを持ち帰れるように、写真と言葉の距離を考えながら記録の形をつくります",
+    "status": "準備中",
+    "image": "./assets/future-lab/record-field-light.png",
+    "imageAlt": "光の差す木々と桜"
+  }
+]

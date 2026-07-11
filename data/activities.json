@@ -1,0 +1,50 @@
+[
+  {
+    "id": "activity-inquiry-design-001",
+    "date": "",
+    "dateLabel": "",
+    "category": "対話",
+    "title": "問いを立てるための聞き方を整える",
+    "summary": "相手の背景や迷いを急いで結論にせず、問いとして持ち帰るための聞き方を整えています",
+    "body": "人に会い、聞き、考え直すための型を少しずつ整えています",
+    "status": "準備中",
+    "image": "./assets/future-lab/activity-listen-sakura.png",
+    "imageAlt": "淡い青の水彩と木漏れ日のイメージ"
+  },
+  {
+    "id": "activity-field-note-001",
+    "date": "",
+    "dateLabel": "",
+    "category": "記録",
+    "title": "出逢いを記録へ変える編集の型を作る",
+    "summary": "聞いた言葉をあとから読み返せるように、記事、写真、制作メモの残し方を整えています",
+    "body": "公開できるものと、まだ預かるべきものを分けながら記録します",
+    "status": "進行中",
+    "image": "./assets/future-lab/activity-field-lens.png",
+    "imageAlt": "紙片と植物標本が重なる探求のイメージ"
+  },
+  {
+    "id": "activity-campus-inquiry-001",
+    "date": "",
+    "dateLabel": "",
+    "category": "探求",
+    "title": "キャンパスから問いの入口を探す",
+    "summary": "東北大学の場から、社会へ開いていける問いの入口を探しています",
+    "body": "大学の知と現場の違和感が接続する余白を探します",
+    "status": "準備中",
+    "image": "./assets/future-lab/activity-shape-constellation.png",
+    "imageAlt": "淡い青の図形と線が重なる問いのイメージ"
+  },
+  {
+    "id": "activity-public-record-001",
+    "date": "",
+    "dateLabel": "",
+    "category": "公開",
+    "title": "活動を次の探求へ渡すために公開する",
+    "summary": "活動の成果だけではなく、問いが生まれるまでの過程も読める形にして残していきます",
+    "body": "公開することを目的にせず、次の探求につながる記録を目指します",
+    "status": "準備中",
+    "image": "./assets/future-lab/activity-record-forest.png",
+    "imageAlt": "桜と光が重なる記録のイメージ"
+  }
+]
