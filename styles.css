@@ -6890,6 +6890,10 @@ body.knot-site img {
   max-width: 100%;
 }
 
+body.knot-site .encounter-mobile-break {
+  display: none;
+}
+
 @media (min-width: 1800px) {
   body.knot-site .knot-section,
   body.knot-site .home-portal {
@@ -7070,8 +7074,13 @@ body.knot-site img {
     white-space: normal;
   }
 
+  body.knot-site .encounter-mobile-break {
+    display: inline;
+  }
+
   body.knot-site .hero-article-carousel {
     top: 270px;
+    left: 50vw;
     width: calc(100vw - 40px);
     padding-bottom: 42px;
   }
@@ -7176,8 +7185,13 @@ body.knot-site img {
     white-space: normal;
   }
 
+  body.knot-site .encounter-mobile-break {
+    display: inline;
+  }
+
   body.knot-site .hero-article-carousel {
     top: 250px;
+    left: 50vw;
     width: calc(100vw - 32px);
   }
 
